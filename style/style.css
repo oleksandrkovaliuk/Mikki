@@ -1,0 +1,127 @@
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 85px;
+    align-items: center;
+    padding-block: 24px 12px;
+}
+
+.nav-wrap .logo {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.navigation .nav-links {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.contacts-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: -12px;
+}
+
+.email h2,
+.social h2 {
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.email a {
+    color: var(--secondary-gray);
+    font-family: Optima;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.social .social-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.section-1 {
+    background-image: url(../img/portrait-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portrait-section-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 91px;
+}
+
+.left-block {
+    margin-right: auto;
+    margin-left: 87px;
+}
+
+.left-block .head-text {
+    margin-bottom: 16px;
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.left-block .discription {
+    margin-bottom: 20px;
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.left-block button {
+    padding: 9px 20px;
+    border-radius: 1px;
+    background: var(--active, #D93448);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: unset;
+}
+
+.left-block button h4 {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}

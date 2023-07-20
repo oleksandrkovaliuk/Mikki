@@ -1,0 +1,19 @@
+@font-face {
+    font-family:'Optima';
+    src: url(../fonts/OPTIMA.woff),
+    url(../fonts/Optima_Italic.woff);
+    font-display:swap;
+    font-style:normal;
+}
+:root{
+    --font-Optima:'Optima' , sans-serif;
+    --fot-text-white:#F3F3F3;
+    --primary:#1A1A1A;
+    --secondary-gray:#656565;
+    --active:#D93448;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
