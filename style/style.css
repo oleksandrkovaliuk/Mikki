@@ -172,10 +172,15 @@
     justify-content: center;
     gap: 30px;
     padding-inline: 85px;
+    margin-bottom: 183px;
 }
 
 .reason-text-wrap {
     max-width: 255px;
+    max-width: 255px;
+    position: sticky;
+    top: 10px;
+    height: 222px;
 }
 
 .reason-text-wrap .reason-why-text {
