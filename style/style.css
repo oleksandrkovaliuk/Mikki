@@ -3,7 +3,7 @@
     justify-content: space-between;
     padding-inline: 85px;
     align-items: center;
-    padding-block: 24px 10px;
+    padding-block: 24px 12px;
 }
 
 .nav-wrap .logo {
@@ -35,6 +35,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    margin-bottom: -10px;
 }
 
 .email h2,
@@ -109,7 +110,8 @@
 
 .left-block button,
 .left-video-block button,
-.reason-text-wrap button {
+.reason-text-wrap button,
+.team-block-wrap button {
     padding: 9px 20px;
     border-radius: 1px;
     background: var(--active, #D93448);
@@ -121,7 +123,8 @@
 
 .left-block button h4,
 .left-video-block button h4,
-.reason-text-wrap button h4 {
+.reason-text-wrap button h4,
+.team-block-wrap button h4 {
     color: var(--fot-text-white);
     font-family: 'Optima', sans-serif;
     font-size: 16px;
@@ -163,32 +166,36 @@
     font-weight: 400;
     line-height: 21px;
 }
+
 .section-3 .reasone-wrap {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding-inline: 85px;
 }
-.reason-text-wrap{
+
+.reason-text-wrap {
     max-width: 255px;
 }
-.reason-text-wrap .reason-why-text{
-    margin-bottom:16px;
+
+.reason-text-wrap .reason-why-text {
+    margin-bottom: 16px;
     color: var(--primary);
     font-family: 'Optima', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-.reason-text-wrap .reason-discription{
-margin-bottom:20px;
-color: var(--primary);
+
+.reason-text-wrap .reason-discription {
+    margin-bottom: 20px;
+    color: var(--primary);
     font-family: 'Optima', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 21px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
 }
 
 .reasons-blocks-wrap .reason-block {
@@ -203,7 +210,7 @@ line-height: 21px;
 .reason-block .reason-block-main-text {
     display: flex;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
 .reason-block-main-text .number {
@@ -224,9 +231,11 @@ line-height: 21px;
     font-weight: 400;
     line-height: normal;
 }
-.reason-text-inside{
+
+.reason-text-inside {
     margin-left: 42px;
 }
+
 .reason-text-inside h4 {
     color: var(--primary);
     font-family: 'Optima', sans-serif;
@@ -234,4 +243,93 @@ line-height: 21px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
+}
+
+.section-4 .team-people-container {
+    display: flex;
+    justify-content: center;
+}
+
+.team-people-container .team-block-wrap {
+    max-width: 540px;
+}
+
+.section-4 .people-net-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 365px;
+    position: relative;
+}
+
+.people-net-wrap .project-manager {
+    border-radius: 80px;
+    background: url(../img/e0ad4b1bcdda7fbddbf0181bd18c125f.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    width: 80px;
+    height: 80px;
+}
+
+.people-net-wrap .dev-ops-fron-rend-wrap {
+    display: flex;
+}
+
+.dev-ops-fron-rend-wrap .dev-ops {
+    padding-right: 104px;
+    border-right: 1px solid var(--primary);
+}
+
+.dev-ops-img {
+    display: flex;
+    border-radius: 80px;
+    background: url(../img/577588edc1ecbbb14932c19858dc7309.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.dev-ops-fron-rend-wrap .front-end {
+    padding-left: 104px;
+}
+
+.people-net-wrap .mikki-kobvel {
+    display: flex;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.mikki-kobvel .left-top,
+.mikki-kobvel .left-bottom {
+    position: absolute;
+    left: 10%;
+    z-index: -1;
+}
+
+.mikki-kobvel .right-top,
+.mikki-kobvel .right-bottom {
+    position: absolute;
+    right: 10%;
+    z-index: -1;
+}
+
+.people-net-wrap .qa-engineer-back-end-wrap {
+    display: flex;
+}
+
+.qa-engineer-back-end-wrap .qa-engineer {
+    padding-right: 104px;
+    border-right: 1px solid var(--primary);
+}
+
+.qa-engineer-back-end-wrap .back-end {
+    padding-left: 104px;
+}
+
+.people-net-wrap .designer {
+    display: flex;
 }
