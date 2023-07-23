@@ -457,6 +457,27 @@
 }
 
 
+.people-net-wrap.active .dev-ops .position,
+.people-net-wrap.active .dev-ops:hover .position {
+    background-color: #D93448;
+}
+
+.people-net-wrap.active .dev-ops .position::after,
+.people-net-wrap.active .dev-ops:hover .position::after {
+    border-bottom-color: #D93448;
+}
+
+.people-net-wrap.active .dev-ops-img,
+.people-net-wrap.active .dev-ops-img:hover {
+    filter: grayscale(0);
+}
+
+.people-net-wrap.active .dev-ops-img path,
+.people-net-wrap.active .dev-ops-img:hover path {
+    stroke: #D93448;
+}
+
+
 .dev-ops-img {
     filter: grayscale(1);
     position: relative;
@@ -536,6 +557,33 @@
 
 .dev-ops-fron-rend-wrap .front-end-img:hover path {
     stroke: #D93448;
+}
+
+
+.people-net-wrap.active .front-end .position,
+.people-net-wrap.active .front-end:hover .position {
+    background-color: #D93448;
+}
+
+.people-net-wrap.active .front-end .position::after,
+.people-net-wrap.active .front-end:hover .position::after {
+    border-left-color: #D93448;
+}
+
+.people-net-wrap.active .front-end-img,
+.people-net-wrap.active .front-end-img:hover {
+    filter: grayscale(0);
+}
+
+.people-net-wrap.active .front-end-img path,
+.people-net-wrap.active .front-end-img:hover path {
+    stroke: #D93448;
+}
+
+
+
+.people-net-wrap.active .mikki:hover img {
+    filter: grayscale(0);
 }
 
 .people-net-wrap .mikki-kobvel.hover .mikki img {
@@ -631,6 +679,28 @@
     position: relative;
 }
 
+
+.people-net-wrap.active .qa-engineer .position,
+.people-net-wrap.active .qa-engineer:hover .position {
+    background-color: #D93448;
+}
+
+.people-net-wrap.active .qa-engineer .position::after,
+.people-net-wrap.active .qa-engineer:hover .position::after {
+    border-bottom-color: #D93448;
+}
+
+.people-net-wrap.active .qa-engineer-img,
+.people-net-wrap.active .qa-engineer-img:hover {
+    filter: grayscale(0);
+}
+
+.people-net-wrap.active .qa-engineer-img path,
+.people-net-wrap.active .qa-engineer-img:hover path {
+    stroke: #D93448;
+}
+
+
 .back-end .position {
     padding: 3px 12px;
     background-color: var(--primary);
@@ -693,6 +763,29 @@
 .qa-engineer-back-end-wrap .back-end-img:hover path {
     stroke: #D93448;
 }
+
+
+
+.people-net-wrap.active .back-end .position,
+.people-net-wrap.active .back-end:hover .position {
+    background-color: #D93448;
+}
+
+.people-net-wrap.active .back-end .position::after,
+.people-net-wrap.active .back-end:hover .position::after {
+    border-left-color: #D93448;
+}
+
+.people-net-wrap.active .back-end-img,
+.people-net-wrap.active .back-end-img:hover {
+    filter: grayscale(0);
+}
+
+.people-net-wrap.active .back-end-img path,
+.people-net-wrap.active .back-end-img:hover path {
+    stroke: #D93448;
+}
+
 
 .people-net-wrap .designer {
     display: flex;
@@ -762,5 +855,25 @@
 }
 
 .people-net-wrap .designer-img:hover::after {
+    background-color: #D93448;
+}
+
+.people-net-wrap.active .designer .position,
+.people-net-wrap.active .designer:hover .position {
+    background-color: #D93448;
+}
+
+.people-net-wrap.active .designer .position::after,
+.people-net-wrap.active .designer:hover .position::after {
+    border-bottom-color: #D93448;
+}
+
+.people-net-wrap.active .designer-img,
+.people-net-wrap.active .designer-img:hover {
+    filter: grayscale(0);
+}
+
+.people-net-wrap.active .designer-img::after,
+.people-net-wrap.active .designer-img:hover::after {
     background-color: #D93448;
 }
