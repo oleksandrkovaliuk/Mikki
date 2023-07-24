@@ -1,9 +1,19 @@
+/* Header */
 .nav-wrap {
     display: flex;
     justify-content: space-between;
     padding-inline: 85px;
     align-items: center;
     padding-block: 24px 12px;
+    max-width: 1920px;
+    box-shadow: 0px 0px 8px 2px rgba(101, 101, 101, 0.40);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 69000;
+    background-color: #fff;
+    margin: auto;
 }
 
 .nav-wrap .logo {
@@ -35,7 +45,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
-    margin-bottom: -10px;
+    font-size: 0;
 }
 
 .email h2,
@@ -69,6 +79,9 @@
     gap: 24px;
 }
 
+/* Header end */
+
+/* Section 1 start */
 .section-1 {
     background-image: url(../img/portrait-bg.png);
     background-repeat: no-repeat;
@@ -81,11 +94,13 @@
     align-items: center;
     justify-content: center;
     padding-right: 91px;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .left-block {
     margin-right: auto;
-    margin-left: 87px;
+    margin-left: 85px;
 }
 
 .left-block .head-text {
@@ -111,7 +126,8 @@
 .left-block button,
 .left-video-block button,
 .reason-text-wrap button,
-.team-block-wrap button {
+.team-block-wrap button,
+.nav-wrap button {
     padding: 9px 20px;
     border-radius: 1px;
     background: var(--active, #D93448);
@@ -124,7 +140,8 @@
 .left-block button h4,
 .left-video-block button h4,
 .reason-text-wrap button h4,
-.team-block-wrap button h4 {
+.team-block-wrap button h4,
+.nav-wrap button {
     color: var(--fot-text-white);
     font-family: 'Optima', sans-serif;
     font-size: 16px;
@@ -133,13 +150,19 @@
     line-height: normal;
 }
 
+/* Section 1 end */
+
+/* Section 2 start */
 .section-2 {
     margin-bottom: 184px;
 }
 
 .section-2 .video-block-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: auto;
+    padding-inline: 85px;
 }
 
 .section-2 .left-video-block {
@@ -167,19 +190,24 @@
     line-height: 21px;
 }
 
+/* Section 2 end */
+
+/* Section 3 start */
 .section-3 .reasone-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     padding-inline: 85px;
-    margin-bottom: 183px;
     align-items: flex-start;
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 183px;
 }
 
 .reason-text-wrap {
     max-width: 255px;
     position: sticky;
-    top: 10px;
+    top: 100px;
 }
 
 .reason-text-wrap .reason-why-text {
@@ -249,9 +277,15 @@
     line-height: 21px;
 }
 
+/* Section 3 end */
+
+/* Section 4 start */
 .section-4 .team-people-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: auto;
+    padding-inline: 85px 217px;
     margin-bottom: 180px;
 }
 
@@ -293,7 +327,7 @@
 
 .people-net-wrap .project-manager-img {
     filter: grayscale(1);
-    display: flex;
+    font-size: 0;
 }
 
 .project-manager .position {
@@ -482,7 +516,7 @@
     filter: grayscale(1);
     position: relative;
     transition: all 0.3s ease;
-    display: flex;
+    font-size: 0;
 }
 
 .dev-ops-img .left-top {
@@ -590,12 +624,15 @@
     filter: grayscale(0);
 }
 
+.people-net-wrap .mikki {
+    font-size: 0;
+}
+
 .people-net-wrap .mikki img {
     border-radius: 80px;
     filter: grayscale(1);
     z-index: 3;
     position: relative;
-    display: flex;
 }
 
 .people-net-wrap .qa-engineer-back-end-wrap {
@@ -642,7 +679,7 @@
 }
 
 .qa-engineer-img {
-    display: flex;
+    font-size: 0;
     filter: grayscale(1);
     position: relative;
 }
@@ -655,7 +692,7 @@
     position: absolute;
     bottom: 87.5%;
     left: 50%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .qa-engineer-back-end-wrap .qa-engineer:hover .position::after {
@@ -735,7 +772,7 @@
 }
 
 .back-end .back-end-img {
-    display: flex;
+    font-size: 0;
     filter: grayscale(1);
     position: relative;
 }
@@ -788,7 +825,7 @@
 
 
 .people-net-wrap .designer {
-    display: flex;
+    font-size: 0;
     position: relative
 }
 
@@ -876,4 +913,221 @@
 .people-net-wrap.active .designer-img::after,
 .people-net-wrap.active .designer-img:hover::after {
     background-color: #D93448;
+}
+
+/* Section 4 end */
+
+/* Section 5 start */
+.section-5 .company-block-wrap {
+    max-width: 1920px;
+    margin: auto;
+    padding-inline: 85px;
+    margin-bottom:208px;
+}
+
+.section-5 .company-block-wrap h2{
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 65px;
+}
+
+.company-recomended-blocks {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.company-recomended-blocks .company-block {
+    max-width: 255px;
+}
+
+.company-block .company-logo.google {
+    margin-bottom: 47px;
+}
+
+.company-block .company-logo.scrum,
+.company-block .company-logo.gmd {
+    margin-bottom: 24px;
+}
+
+.company-block .company-logo.airbnb {
+    margin-bottom: 50px;
+}
+
+.company-block .name,
+.company-block .position {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.company-block .name{
+    margin-bottom:4px;
+}
+.company-block .position {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.company-block .position::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 32px;
+    height: 1px;
+    background-color: var(--primary);
+}
+
+.company-block .discription {
+    position: relative;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.company-block .discription::before {
+    content: '“';
+    position: absolute;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: -20px;
+}
+
+.company-block .discription::after {
+    content: '“';
+    position: absolute;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    right: 0;
+    bottom: -20;
+    rotate: 180deg;
+}
+
+.nav-wrap button {
+    display: none;
+}
+
+@media(max-width:1280px) {
+    .section-4 .team-people-container {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        gap: 40px;
+        padding: 0;
+        margin-bottom: 180px;
+    }
+
+    .team-people-container .team-block-wrap {
+        margin: auto;
+    }
+}
+
+@media(max-width:1080px) {
+    .navigation {
+        display: none;
+    }
+
+    .contacts-wrap {
+        display: none;
+    }
+
+    .nav-wrap button {
+        display: flex;
+    }
+
+    .portrait-section-wrap {
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+
+    .section-2 .video-block-wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .reasone-wrap {
+        flex-direction: column;
+    }
+
+    .reasone-wrap .reason-text-wrap {
+        position: static;
+    }
+    .company-recomended-blocks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .nav-wrap {
+        padding-inline: 20px;
+    }
+
+    .portrait-section-wrap {
+        min-height: 100vh;
+    }
+
+    .left-block {
+        margin: 0;
+        padding-inline: 20px;
+    }
+
+    .portrait-section-wrap img {
+        display: none;
+    }
+
+    .section-2 .video-block-wrap {
+        padding-inline: 20px;
+    }
+
+    .section-2 .left-video-block {
+        margin-right: 0;
+    }
+
+    .section-3 .reasone-wrap {
+        padding-inline: 20px;
+    }
+
+    .reasons-blocks-wrap .reason-block {
+        flex-direction: column;
+    }
+
+    .section-4 .team-people-container {
+        padding-inline: 20px;
+    }
+
+    .section-4 .people-net-wrap {
+        display: none;
+    }
+    .section-5 .company-block-wrap{
+        padding-inline:20px;
+    }
+}
+
+@media(max-width:350px) {
+    .nav-wrap {
+        padding-inline: 15px;
+    }
+
+    .nav-wrap .logo {
+        font-size: 18px;
+    }
 }
