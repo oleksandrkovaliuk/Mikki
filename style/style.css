@@ -127,7 +127,8 @@
 .left-video-block button,
 .reason-text-wrap button,
 .team-block-wrap button,
-.nav-wrap button {
+.nav-wrap button,
+.remote-text button {
     padding: 9px 20px;
     border-radius: 1px;
     background: var(--active, #D93448);
@@ -141,7 +142,8 @@
 .left-video-block button h4,
 .reason-text-wrap button h4,
 .team-block-wrap button h4,
-.nav-wrap button {
+.nav-wrap button,
+.remote-text button h4 {
     color: var(--fot-text-white);
     font-family: 'Optima', sans-serif;
     font-size: 16px;
@@ -862,7 +864,7 @@
 }
 
 .designer .designer-img {
-    display: flex;
+    font-size: 0;
     filter: grayscale(1);
 }
 
@@ -922,10 +924,10 @@
     max-width: 1920px;
     margin: auto;
     padding-inline: 85px;
-    margin-bottom:208px;
+    margin-bottom: 208px;
 }
 
-.section-5 .company-block-wrap h2{
+.section-5 .company-block-wrap h2 {
     color: var(--primary);
     font-family: 'Optima', sans-serif;
     font-size: 20px;
@@ -967,9 +969,11 @@
     font-weight: 400;
     line-height: normal;
 }
-.company-block .name{
-    margin-bottom:4px;
+
+.company-block .name {
+    margin-bottom: 4px;
 }
+
 .company-block .position {
     margin-bottom: 60px;
     position: relative;
@@ -1021,11 +1025,304 @@
     rotate: 180deg;
 }
 
+/* Section 5 end */
+
+/* Section 6 start */
+.articles-wrap {
+    max-width: 1920px;
+    margin: auto;
+    padding-inline: 85px;
+    margin-bottom: 64px;
+}
+
+.articles-wrap .text-top {
+    margin-bottom: 64px;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.articles-block-wrap {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.articles-block {
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.articles-block .date-time-position {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.date-time-position .date,
+.date-time-position .time,
+.date-time-position .position {
+    color: var(--secondary-gray);
+    text-align: center;
+    font-family: 'Optima', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Section 6 end */
+
+/* Section 7 start */
+.section-7 {
+    padding-inline: 85px;
+}
+
+.section-7 .sign-up-block-wrap {
+    padding: 20px;
+    background-image: url(../img/enter-email-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 186px;
+}
+
+.sign-up-block-wrap .sign-up {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.sign-up-block-wrap .discription {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.sign-up-block-wrap .enter-your-email-wrap {
+    display: flex;
+    max-width: 508px;
+}
+
+.enter-your-email-wrap form {
+    width: 100%;
+    position: relative;
+}
+
+.enter-your-email-wrap .input-email {
+    width: 100%;
+    padding-block: 12px;
+    border: 1px solid var(--secondary-gray);
+}
+
+.enter-your-email-wrap .email {
+    width: 100%;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    pointer-events: none;
+}
+
+.enter-your-email-wrap button {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 8px;
+    background-color: var(--active);
+    border: none;
+}
+
+.enter-your-email-wrap button h4 {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Section 7 end */
+
+/* Section 8 star */
+
+.how-to-build-container {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 85px;
+    gap: 30px;
+}
+
+.how-to-build-container .build-left-block {
+    max-width: 445px;
+}
+
+.main-text-wrap .main-top-text {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 115px;
+}
+
+.main-text-wrap .discription {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
+
+.build-left-block .author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.build-left-block .author h4 {
+    color: var(--primary);
+    text-align: right;
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.how-to-build-container .build-remote-block {
+    max-width: 635px;
+}
+
+.build-remote-img {
+    display: flex;
+    justify-content: center;
+    padding-block: 20px;
+    margin-bottom: 20px;
+    background: var(--accent-background, #E9E9E9);
+}
+
+.remote-text .remote-top-text {
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.remote-text .remote-discription {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+/* Section 8 end */
+
+/* Section 9 start */
+.lets-get-touch-container {
+    padding: 64px 85px;
+    background-image: url(../img/touch-it-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lets-get-touch-container .lets-get {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom:64px;
+}
+.lets-get-touch-container .social-sayhello-container {
+    display: flex;
+    justify-content: space-between;
+}
+.social-sayhello-container .lets-touch-left-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.social-sayhello-container .say-hello-block{
+    width:730px
+}
+.hello-input-сontainer .input-block-top{
+    gap: 30px;
+    display: flex;
+}
+.input-block-top .input-block{
+    width:100%
+}
+.input-block form{
+    position: relative;
+}
+.input-block .hello-input{
+    width: 100%;
+    padding:12px;
+}
+.input-block .text-in-input{
+    position: absolute;
+    left: 12px;
+    top:12px;
+}
+.write-me .write-me-text,
+.follow-me .follow-me-text {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.write-me .write-me-text , .follow-me .follow-me-text{
+    margin-bottom:20px;
+}
+.write-me .write-me-email,
+.follow-me ul li {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.follow-me ul{
+    list-style: none;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
 .nav-wrap button {
     display: none;
 }
 
-@media(max-width:1280px) {
+@media(max-width:1279px) {
     .section-4 .team-people-container {
         flex-direction: column;
         align-items: center;
@@ -1037,6 +1334,11 @@
 
     .team-people-container .team-block-wrap {
         margin: auto;
+    }
+
+    .articles-block-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -1070,9 +1372,15 @@
     .reasone-wrap .reason-text-wrap {
         position: static;
     }
-    .company-recomended-blocks{
+
+    .company-recomended-blocks {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .how-to-build-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1117,12 +1425,39 @@
     .section-4 .people-net-wrap {
         display: none;
     }
-    .section-5 .company-block-wrap{
-        padding-inline:20px;
+
+    .section-5 .company-block-wrap {
+        padding-inline: 20px;
+    }
+
+    .articles-wrap {
+        padding-inline: 15px;
+    }
+
+    .section-7 {
+        padding-inline: 0px;
+    }
+
+    .sign-up-block-wrap {
+        padding: 15px;
+    }
+
+    .sign-up-block-wrap .sign-up,
+    .sign-up-block-wrap .discription {
+        text-align: center;
+    }
+
+    .sign-up-block-wrap .enter-your-email-wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .how-to-build-container {
+        padding-inline: 20px;
     }
 }
 
-@media(max-width:350px) {
+@media(max-width:360px) {
     .nav-wrap {
         padding-inline: 15px;
     }

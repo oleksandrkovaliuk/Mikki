@@ -12,6 +12,7 @@
     --primary: #1A1A1A;
     --secondary-gray: #656565;
     --active: #D93448;
+    --accent-background:#E9E9E9;
 }
 
 * {
@@ -19,6 +20,7 @@
     margin: 0;
     padding: 0;
 }
+
 
  /* .site-width{
     max-width:1280px;
