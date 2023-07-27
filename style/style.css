@@ -5,7 +5,6 @@
     padding-inline: 85px;
     align-items: center;
     padding-block: 24px 12px;
-    max-width: 1920px;
     box-shadow: 0px 0px 8px 2px rgba(101, 101, 101, 0.40);
     position: fixed;
     left: 0;
@@ -13,7 +12,6 @@
     top: 0;
     z-index: 69000;
     background-color: #fff;
-    margin: auto;
 }
 
 .nav-wrap .logo {
@@ -135,6 +133,7 @@
     align-items: center;
     gap: 8px;
     border: unset;
+    cursor: pointer;
 }
 
 .left-block button h4,
@@ -230,13 +229,15 @@
     font-weight: 400;
     line-height: 21px;
 }
-
+.reasons-blocks-wrap{
+    border-top:1px solid var(--primary);
+}
 .reasons-blocks-wrap .reason-block {
     display: flex;
     align-items: center;
     gap: 30px;
     padding-block: 12px;
-    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
     justify-content: space-between;
 }
 
@@ -1122,10 +1123,15 @@
 
 .enter-your-email-wrap .input-email {
     width: 100%;
-    padding-block: 12px;
+    padding: 12px;
     border: 1px solid var(--secondary-gray);
 }
-
+.enter-your-email-wrap .input-email:active , .enter-your-email-wrap .input-email:focus{
+    outline: none;
+}
+.enter-your-email-wrap .input-email:active+label , .enter-your-email-wrap .input-email:focus+label {
+    display:none;
+}
 .enter-your-email-wrap .email {
     position: absolute;
     left: 12px;
@@ -1146,6 +1152,7 @@
     gap: 8px;
     background-color: var(--active);
     border: none;
+    cursor: pointer;
 }
 
 .enter-your-email-wrap button h4 {
@@ -1318,7 +1325,9 @@
     font-weight: 400;
     line-height: normal;
 }
-
+.hello-input:active , .hello-input:focus{
+    outline: none;
+}
 .hello-input-сontainer .hello-block {
     gap: 30px;
     display: flex;
@@ -1341,6 +1350,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    pointer-events: none;
 }
 
 .input-wrap .input-top-text {
@@ -1350,7 +1360,9 @@
 .input-wrap .text-in-input {
     color: var(--primary);
 }
-
+.hello-input:active+label , .hello-input:focus+label , .hello-input:not(:placeholder-shown)+label{
+    display:none;
+}
 .hello-block .chose-your-role {
     display: flex;
     align-items: center;
@@ -1367,8 +1379,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    cursor: pointer;
 }
-
+.chose-your-role .selector:active , .chose-your-role .selector:focus{
+    outline: none;
+}
 .chose-your-role svg {
     position: absolute;
     right: 18px;
@@ -1378,6 +1393,7 @@
 .input-wrap .hello-input {
     width: 100%;
     padding: 12px;
+    cursor: pointer;
 }
 
 .input-wrap .text-in-input {
@@ -1571,7 +1587,6 @@
     .section-3 .reasone-wrap {
         padding-inline: 20px;
     }
-
     .reasons-blocks-wrap .reason-block {
         flex-direction: column;
     }
