@@ -12,7 +12,11 @@
     --primary: #1A1A1A;
     --secondary-gray: #656565;
     --active: #D93448;
-    --accent-background:#E9E9E9;
+    --accent-background: #E9E9E9;
+}
+
+body {
+    background-color: #F8F9FC;
 }
 
 * {
@@ -21,8 +25,222 @@
     padding: 0;
 }
 
+.left-block button,
+.left-video-block button,
+.reason-text-wrap button,
+.team-block-wrap button,
+.nav-wrap button,
+.remote-text button,
+.sign-up-block-wrap button {
+    padding: 9px 20px;
+    border-radius: 1px;
+    background: var(--active, #D93448);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: unset;
+    cursor: pointer;
+}
 
- /* .site-width{
-    max-width:1280px;
-    margin:auto;
-} */
+.left-block button h4,
+.left-video-block button h4,
+.reason-text-wrap button h4,
+.team-block-wrap button h4,
+.nav-wrap button h4,
+.remote-text button h4,
+.sign-up-block-wrap button h4 {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 85px;
+    align-items: center;
+    padding-block: 24px 12px;
+    box-shadow: 0px 0px 8px 2px rgba(101, 101, 101, 0.40);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 69000;
+    background-color: #F8F9FC;
+}
+.nav-wrap a{
+    text-decoration: none;
+}
+.nav-wrap .logo {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.navigation .nav-links {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.contacts-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 0;
+}
+
+.email h2,
+.social h2 {
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.email a {
+    color: var(--secondary-gray);
+    font-family: Optima;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.social .social-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.stay-with-me-container {
+    margin-inline: 85px;
+    border-top: 1px solid var(--primary);
+    padding-top: 64px;
+    margin-bottom: 32px;
+}
+
+.stay-with-me-container .stay-with-me-wrap {
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+.stay-with-me-wrap .stay-maintext,
+.stay-with-me-wrap .stay-discription {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.stay-with-me-wrap .stay-maintext {
+    margin-bottom: 16px;
+    font-size: 40px;
+}
+
+.stay-with-me-wrap .stay-discription {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.stay-with-me-wrap .enter-your-email-wrap {
+    display: flex;
+}
+
+.stay-with-me-wrap .enter-your-email-wrap .input-email {
+    background-color: #F8F9FC;
+}
+.input-email:active+label,
+.input-email:focus+label,
+.input-email:not(:placeholder-shown)+label {
+    display: none;
+}
+.stay-with-me-container .copyright-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-bottom .privacy-police {
+    display: flex;
+    gap: 64px;
+}
+
+.copyright-bottom .copy-right,
+.privacy-police a {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.privacy-police a {
+    text-decoration: underline;
+}
+
+.copyright-bottom .social-nav {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.copyright-bottom .social-nav li {
+    padding: 4px 4px 0;
+    background-color: var(--accent-background);
+}
+
+@media(max-width:1080px) {
+    .navigation {
+        display: none;
+    }
+
+    .contacts-wrap {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .nav-wrap {
+        padding-inline: 20px;
+    }
+}
+
+@media(max-width:360px) {
+    .nav-wrap {
+        padding-inline: 15px;
+    }
+
+    .nav-wrap .logo {
+        font-size: 18px;
+    }
+}
