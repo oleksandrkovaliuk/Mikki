@@ -222,6 +222,7 @@
 .people-net-wrap .project-manager-img {
     filter: grayscale(1);
     font-size: 0;
+    position: relative;
 }
 
 .project-manager .position {
@@ -265,6 +266,7 @@
     height: 80px;
     left: 0;
     right: 0;
+    top: 0;
     margin: auto;
     translate: 0 100%;
     z-index: -1;
@@ -758,6 +760,7 @@
 .designer .designer-img {
     font-size: 0;
     filter: grayscale(1);
+    position: relative;
 }
 
 .designer-img::after {
@@ -769,6 +772,7 @@
     margin: auto;
     left: 0;
     right: 0;
+    top: 0;
     translate: 0 -100%;
     z-index: -1;
 }
