@@ -222,6 +222,7 @@ img{
     background-color: var(--accent-background);
 }
 
+
 @media(max-width:1080px) {
     .navigation {
         display: none;
