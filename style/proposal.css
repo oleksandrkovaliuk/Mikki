@@ -1,0 +1,390 @@
+/* Section 1 start */
+.section-1 {
+    margin-top: 100px;
+    padding-inline: 85px;
+    margin-bottom: 64px;
+}
+
+.section-1 .back-to-page {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    text-decoration: none;
+}
+
+.back-to-page .back-top-page-txt {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-1 .build-solution {
+    display: flex;
+    justify-content: space-between;
+}
+
+.build-solution .build-text-wrap {
+    max-width: 540px;
+}
+
+.build-text-wrap .main-text {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.build-solution ul {
+    list-style: none;
+}
+
+.build-solution .discription {
+    color: #000;
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.build-solution .discription:last-child {
+    margin-bottom: 0px;
+}
+
+/* Section 1 end */
+
+/* Section 2 start */
+.section-2 {
+    margin-bottom: 180px;
+}
+
+.section-2 .what-to-expect-container {
+    padding: 64px 85px;
+    background-image: url(../img/portrait-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.what-to-expect-container .main-text {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px;
+    margin-bottom: 64px;
+}
+
+.what-to-expect-container .information-blocks-container {}
+
+.information-blocks-container .information-block-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.information-blocks-container .information-block-wrap:last-child {
+    margin-bottom: 0px;
+}
+
+.information-block-wrap .info-block {
+    max-width: 350px;
+}
+
+.info-block .info-text {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.info-block .info-discription {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21PX;
+}
+
+/* Section 2 end */
+
+/* Section 3 start */
+.section-3 .clients-block {
+    padding-inline: 85px;
+    margin-bottom: 164px;
+}
+
+.section-3 .clients-text {
+    margin-bottom: 64px;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-3 .company-block {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.section-3 .text-wrap {
+    max-width: 730px;
+}
+
+.company-block .company-logo.google {
+    margin-bottom: 47px;
+}
+
+.company-block .company-logo.airbnb {
+    margin-bottom: 50px;
+}
+
+.company-block .name,
+.company-block .position {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.company-block .name {
+    margin-bottom: 4px;
+}
+
+.company-block .position {
+    position: relative;
+}
+
+.company-block .discription::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 32px;
+    height: 1px;
+    background-color: var(--primary);
+}
+
+.company-block .discription {
+    position: relative;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 40px;
+}
+
+/* Section 3 end */
+
+/* Section 4 start */
+.section-4 {
+    padding-inline: 85px;
+}
+
+.section-4 .sign-up-block-wrap {
+    padding: 20px;
+    background-image: url(../img/enter-email-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 186px;
+}
+
+.sign-up-block-wrap .sign-up {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.sign-up-block-wrap .discription {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.sign-up-block-wrap .enter-your-email-wrap {
+    display: flex;
+    max-width: 508px;
+}
+
+.enter-your-email-wrap form {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.enter-your-email-wrap .input-email {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid var(--secondary-gray);
+}
+
+.enter-your-email-wrap .input-email:active,
+.enter-your-email-wrap .input-email:focus {
+    outline: none;
+}
+
+.enter-your-email-wrap .input-email:active+label,
+.enter-your-email-wrap .input-email:focus+label {
+    display: none;
+}
+
+.enter-your-email-wrap .email {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    pointer-events: none;
+}
+
+.enter-your-email-wrap button {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 8px;
+    background-color: var(--active);
+    border: none;
+    cursor: pointer;
+}
+
+.enter-your-email-wrap button h4 {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Section 4 end */
+
+/* Section 5 start */
+.section-5 {
+    margin-bottom:180px;
+}
+.section-5 .main-text {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px;
+    margin-bottom:64px;
+}
+
+.section-5 .related-blocks-container {
+    padding-inline:85px;
+}
+
+.related-blocks-container .related-block-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.related-block-wrap .related-block {
+    max-width: 350px;
+    width: 100%;
+    padding: 24px 20px;
+    border: 1px solid var(--primary);
+    min-height: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.related-block .related-text {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.related-block .discription {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    display: none;
+}
+
+.related-block .learn-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top:16px;
+}
+
+.related-block .learn-more h5 {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.related-block-wrap .related-block:hover {
+    border-color: var(--active);
+}
+.related-block-wrap .related-block:hover .related-text{
+    font-size:20px;
+    margin-bottom:16px;
+}
+.related-block-wrap .related-block:hover .discription{
+    display:block;
+}
+.related-block-wrap .related-block:hover .learn-more h5{
+    color:var(--active);
+}
+.related-block-wrap .related-block:hover .learn-more path{
+    fill:var(--active);
+}
+/* Section 5 end */
+.nav-wrap button {
+    display: none;
+}
+
+@media(max-width:1080px) {
+    .nav-wrap button {
+        display: flex;
+    }
+}

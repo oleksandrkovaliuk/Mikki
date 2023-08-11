@@ -1,0 +1,473 @@
+/* Section 1 start*/
+.section-1 .build-remotes-team-container {
+    margin-top: 133px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 85px;
+    margin-bottom: 180px;
+}
+
+.build-remotes-team-container .build-remote-text {
+    margin-right: 73px;
+}
+
+.build-remote-text .main-text,
+.build-remote-text .discription,
+.what-inside-text .main-text,
+.what-inside-text .discription,
+.what-inside-text .discription-li,
+.this-book-for-container .main-text,
+.about-author-container .main-text {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.build-remote-text .main-text,
+.what-inside-text .main-text {
+    margin-bottom: 16px;
+}
+
+.build-remote-text .discription,
+.what-inside-text .discription,
+.what-inside-text .discription-li {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.build-remotes-team-container .build-remote-img,
+.whats-inside-container .build-remote-img {
+    display: flex;
+    justify-content: center;
+    padding-block: 20px;
+    margin-bottom: 20px;
+    background: var(--accent-background, #E9E9E9);
+    width: 100%;
+    max-width: 540px;
+}
+
+.whats-inside-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 180px;
+    padding-inline: 85px;
+}
+
+.whats-inside-container .build-remote-img {
+    max-width: 445px;
+}
+
+.whats-inside-container .what-inside-text {
+    max-width: 445px;
+}
+
+.what-inside-text .discription {
+    margin-bottom: 16px;
+}
+
+.what-inside-text ul {
+    list-style: none;
+}
+
+.what-inside-text ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.what-inside-text .discription-li {
+    margin-bottom: 0px;
+}
+
+/* Section 1 end */
+/* Section 2 start */
+.section-2 {
+    padding-inline: 85px;
+    margin-bottom: 180px;
+}
+
+.section-2 .sign-up-block-wrap {
+    padding: 20px;
+    background-image: url(../img/enter-email-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 186px;
+}
+
+.sign-up-block-wrap .sign-up {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.sign-up-block-wrap .discription {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.sign-up-block-wrap .enter-your-email-wrap {
+    display: flex;
+    max-width: 508px;
+}
+
+.enter-your-email-wrap form {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.enter-your-email-wrap .input-email {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid var(--secondary-gray);
+}
+
+.section-2 .enter-your-email-wrap .input-email {
+    padding-block: 15px;
+}
+
+.enter-your-email-wrap .input-email:active,
+.enter-your-email-wrap .input-email:focus {
+    outline: none;
+}
+
+.enter-your-email-wrap .input-email:active+label,
+.enter-your-email-wrap .input-email:focus+label {
+    display: none;
+}
+
+.enter-your-email-wrap .email {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    pointer-events: none;
+}
+
+.section-2 .enter-your-email-wrap .email {
+    top: 15px;
+}
+
+.enter-your-email-wrap button {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 8px;
+    background-color: var(--active);
+    border: none;
+    cursor: pointer;
+}
+
+.enter-your-email-wrap button h4 {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Section 2 end */
+
+/* Section 3 start */
+.section-3 .this-book-for-container {
+    text-align: center;
+    padding-inline: 85px;
+    margin-bottom: 180px;
+}
+
+.this-book-for-container .main-text {
+    margin-bottom: 64px;
+}
+
+.this-book-for-container .this-books-for-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.this-books-for-blocks .this-books-for-block {
+    max-width: 255px;
+    border: 1px solid var(--primary);
+    padding: 24px 12px;
+    width: 100%;
+    min-width: 255px;
+}
+
+.this-books-for-blocks .this-books-for-block.last {
+    padding-bottom: 8px;
+}
+
+.this-books-for-block svg {
+    margin-bottom: 12px;
+}
+
+.this-books-for-block .books-for-text {
+    color: var(--primary);
+    text-align: center;
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Section 3 end */
+
+/* Section 4 start */
+.section-4 .about-author-container {
+    margin-bottom: 180px;
+}
+
+.about-author-container .main-text {
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.about-author-container .about-author-wrap {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-inline: 85px;
+}
+
+.about-author-wrap .about-author-text-block {
+    max-width: 540px;
+}
+
+.about-author-text-block .author-name {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-author-text-block .author-skills {
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-block: 12px;
+}
+
+.about-author-text-block .social-nav {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.about-author-text-block .social-nav li {
+    padding: 4px 4px 0;
+    background-color: var(--accent-background);
+}
+
+.about-author-text-block .discription {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+/* Section 4 end */
+
+/* Section 5 start */
+.section-5 .sign-blocks-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-inline: 85px;
+    margin-bottom: 186px;
+}
+
+.sign-blocks-container .sign-up-block-wrap {
+    padding: 20px 12px;
+    background-image: url(../img/left-cta.png);
+    background-repeat: no-repeat;
+    max-width: 445px;
+    text-align: center;
+    min-height: 280px;
+    background-size: cover;
+}
+
+.sign-blocks-container .sign-up-block-wrap.bottom {
+    background-image: url(../img/right-cta.png);
+    border: 1px solid var(--primary);
+}
+
+.sign-up-block-wrap button {
+    margin-inline: auto;
+}
+
+.sign-up-block-wrap .sign-up {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.sign-up-block-wrap.bottom .sign-up,
+.sign-up-block-wrap.bottom .discription {
+    color: var(--primary);
+}
+
+.sign-up-block-wrap .discription {
+    font-size: 16px;
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-style: normal;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sign-up-block-wrap .enter-your-email-wrap {
+    display: flex;
+    max-width: 508px;
+}
+
+.enter-your-email-wrap .subscribe-btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Section 5 end */
+.nav-wrap button {
+    display: none;
+}
+
+@media(max-width:1278px) {
+    .this-book-for-container .this-books-for-blocks {
+        justify-content: center;
+    }
+}
+
+@media(max-width:1080px) {
+    .nav-wrap button {
+        display: flex;
+    }
+
+    .section-4 .about-author-container {
+        margin-bottom: 30px;
+    }
+
+    .about-author-container .about-author-wrap {
+        flex-direction: column;
+    }
+
+    .sign-blocks-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sign-blocks-container .sign-up-block-wrap {
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width:950px) {
+    .section-1 .build-remotes-team-container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .build-remotes-team-container .build-remote-img,
+    .whats-inside-container .build-remote-img {
+        max-width: unset;
+    }
+
+    .whats-inside-container {
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .section-1 .build-remotes-team-container,
+    .section-1 .build-remotes-team-container,
+    .section-2,
+    .section-3 .this-book-for-container,
+    .about-author-container .about-author-wrap {
+        padding-inline: 20px;
+    }
+
+    .section-5 .sign-blocks-container {
+        gap: 20px;
+        margin-bottom: 40px;
+        padding-inline: 20px;
+    }
+
+    .sign-blocks-container .sign-up-block-wrap,
+    .sign-blocks-container .sign-up-block-wrap.bottom {
+        background-size: cover;
+        min-height: 437px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: unset;
+    }
+
+    .stay-with-me-container {
+        margin-inline: 20px;
+        padding-top: 12px;
+    }
+
+    .stay-with-me-container .stay-with-me-wrap {
+        margin-bottom: 24px;
+    }
+
+    .stay-with-me-container .copyright-bottom {
+        flex-direction: column-reverse;
+        row-gap: 24px;
+    }
+}
+
+@media(max-width:400px) {
+    .sign-up-block-wrap button {
+        margin-inline: unset;
+    }
+
+    .sign-blocks-container .sign-up-block-wrap.bottom button {
+        margin-inline: auto;
+    }
+
+    .section-5 .sign-blocks-container {
+        padding-inline: unset;
+    }
+}

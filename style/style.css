@@ -1024,10 +1024,11 @@
 .enter-your-email-wrap form {
     width: 100%;
     position: relative;
+    display:flex;
 }
 
 .enter-your-email-wrap .input-email {
-    width: 100%;
+    flex-grow:1;
     padding: 12px;
     border: 1px solid var(--secondary-gray);
 }

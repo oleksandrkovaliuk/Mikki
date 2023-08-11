@@ -26,6 +26,7 @@
     gap: 20px;
     position: sticky;
     top: 100px;
+    margin-bottom: 64px;
 }
 
 .social-share h2 {
@@ -197,13 +198,15 @@
     align-items: center;
     gap: 24px;
     list-style: none;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
-.share ul{
+
+.share ul {
     margin-bottom: 64px;
 }
+
 .tags li,
-.share li , 
+.share li,
 .socials h4 {
     color: var(--primary);
     text-align: center;
@@ -220,7 +223,7 @@
 
 .share .socials {
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
     gap: 8px;
     padding: 7px 12px 5px 12px;
     background-color: var(--accent-background);
@@ -233,13 +236,13 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    margin-bottom: 186px;
 }
 
 .sign-blocks-container .sign-up-block-wrap {
     padding: 20px 12px;
     background-image: url(../img/left-cta.png);
     background-repeat: no-repeat;
-    margin-bottom: 186px;
     max-width: 445px;
     text-align: center;
 }
@@ -247,7 +250,7 @@
 .sign-blocks-container .sign-up-block-wrap.bottom {
     background-image: url(../img/right-cta.png);
     border: 1px solid var(--primary);
-    max-height:280px;
+    max-height: 280px;
 }
 
 .sign-up-block-wrap button {
@@ -288,6 +291,7 @@
     width: 100%;
     justify-content: center;
 }
+
 /* Section 3 end */
 
 /* Section 4 start */
@@ -347,16 +351,18 @@
     font-weight: 400;
     line-height: normal;
 }
+
 /* Section 4 end */
 
 /* Footer */
 .enter-your-email-wrap form {
     width: 100%;
     position: relative;
+    display: flex;
 }
 
 .enter-your-email-wrap .input-email {
-    width: 100%;
+    flex-grow: 1;
     padding: 12px;
     border: 1px solid var(--secondary-gray);
 }
@@ -402,20 +408,24 @@
     font-weight: 400;
     line-height: normal;
 }
+
 /* Footer*/
 .nav-wrap button {
     display: none;
 }
+
 @media(max-width:1279px) {
     .articles-block-wrap {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
+
 @media(max-width:1080px) {
     .nav-wrap button {
         display: flex;
     }
+
     .sign-blocks-container {
         flex-direction: column;
         align-items: center;
@@ -426,12 +436,15 @@
         margin-bottom: 0px;
     }
 }
-@media(max-width:768px){
-    .section-2{
-        gap:10px;
+
+@media(max-width:768px) {
+    .section-2 {
+        gap: 10px;
     }
+
     .section-3 .sign-blocks-container {
         gap: 20px;
+        margin-bottom: 40px;
     }
 
     .sign-blocks-container .sign-up-block-wrap {
@@ -441,12 +454,15 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
     .sign-blocks-container .sign-up-block-wrap.bottom {
         margin-bottom: 40px;
     }
+
     .articles-wrap {
         padding-inline: 15px;
     }
+
     .stay-with-me-container {
         margin-inline: 20px;
         padding-top: 12px;
@@ -460,14 +476,20 @@
         flex-direction: column-reverse;
         row-gap: 24px;
     }
-    .tags ul, .share ul{
-        flex-direction:column;
+    .tags ul,
+    .share ul {
+        flex-direction: column;
     }
-    .tags ul{
-        gap:10px;
+
+    .tags ul {
+        gap: 10px;
     }
-    .share .socials{
+
+    .share .socials {
         justify-content: center;
-        width:100%;
+        width: 100%;
+    }
+    .enter-your-email-wrap button{
+        margin-inline:unset;
     }
 }

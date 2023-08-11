@@ -24,17 +24,54 @@ body {
     margin: 0;
     padding: 0;
 }
-img{
-    display:block;
-    max-width:100%;
+
+img {
+    display: block;
+    max-width: 100%;
 }
+
+header .nav-mobile-container {
+    padding-inline: 15px;
+    position: fixed;
+    bottom: 12px;
+    z-index: 1090;
+    width: 100%;
+}
+
+.nav-mobile-container .nav-mobile-blocks {
+    display: flex;
+    padding: 8px 16px;
+    border-radius: 1px;
+    background: var(--primary);
+    box-shadow: 0px 0px 4px 2px rgba(101, 101, 101, 0.50);
+    justify-content: space-between;
+}
+
+.nav-mobile-blocks .nav-mobile-block {
+    text-align: center;
+}
+.nav-mobile-block a{
+    text-decoration: none;
+}
+.nav-mobile-block .nav-text {
+    color: var(--fot-text-white);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .left-block button,
 .left-video-block button,
 .reason-text-wrap button,
 .team-block-wrap button,
 .nav-wrap button,
 .remote-text button,
-.sign-up-block-wrap button {
+.sign-up-block-wrap button,
+.build-remote-text button,
+.what-inside-text button,
+.about-author-text-block button {
     padding: 9px 20px;
     border-radius: 1px;
     background: var(--active, #D93448);
@@ -51,7 +88,10 @@ img{
 .team-block-wrap button h4,
 .nav-wrap button h4,
 .remote-text button h4,
-.sign-up-block-wrap button h4 {
+.sign-up-block-wrap button h4,
+.build-remote-text button h4,
+.what-inside-text button h4,
+.about-author-text-block button h4 {
     color: var(--fot-text-white);
     font-family: 'Optima', sans-serif;
     font-size: 16px;
@@ -74,9 +114,11 @@ img{
     z-index: 69000;
     background-color: #F8F9FC;
 }
-.nav-wrap a{
+
+.nav-wrap a {
     text-decoration: none;
 }
+
 .nav-wrap .logo {
     color: var(--primary);
     font-family: 'Optima', sans-serif;
@@ -181,11 +223,13 @@ img{
 .stay-with-me-wrap .enter-your-email-wrap .input-email {
     background-color: #F8F9FC;
 }
+
 .input-email:active+label,
 .input-email:focus+label,
 .input-email:not(:placeholder-shown)+label {
     display: none;
 }
+
 .stay-with-me-container .copyright-bottom {
     display: flex;
     justify-content: space-between;
@@ -221,7 +265,9 @@ img{
     padding: 4px 4px 0;
     background-color: var(--accent-background);
 }
-
+header .nav-mobile-container{
+    display:none;
+}
 
 @media(max-width:1080px) {
     .navigation {
@@ -231,11 +277,25 @@ img{
     .contacts-wrap {
         display: none;
     }
+    header .nav-mobile-container{
+        display:block;
+    }
 }
 
 @media(max-width:768px) {
     .nav-wrap {
         padding-inline: 20px;
+    }
+}
+
+@media(max-width:400px) {
+    .enter-your-email-wrap form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .enter-your-email-wrap button {
+        justify-content: center;
     }
 }
 
