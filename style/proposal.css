@@ -25,6 +25,7 @@
 .section-1 .build-solution {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .build-solution .build-text-wrap {
@@ -292,8 +293,9 @@
 
 /* Section 5 start */
 .section-5 {
-    margin-bottom:180px;
+    margin-bottom: 180px;
 }
+
 .section-5 .main-text {
     text-align: center;
     color: #000;
@@ -303,17 +305,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: 51px;
-    margin-bottom:64px;
+    margin-bottom: 64px;
 }
 
 .section-5 .related-blocks-container {
-    padding-inline:85px;
+    padding-inline: 85px;
 }
 
 .related-blocks-container .related-block-wrap {
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap: 30px;
 }
 
 .related-block-wrap .related-block {
@@ -350,7 +352,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top:16px;
+    margin-top: 16px;
 }
 
 .related-block .learn-more h5 {
@@ -365,26 +367,97 @@
 .related-block-wrap .related-block:hover {
     border-color: var(--active);
 }
-.related-block-wrap .related-block:hover .related-text{
-    font-size:20px;
-    margin-bottom:16px;
+
+.related-block-wrap .related-block:hover .related-text {
+    font-size: 20px;
+    margin-bottom: 16px;
 }
-.related-block-wrap .related-block:hover .discription{
-    display:block;
+
+.related-block-wrap .related-block:hover .discription {
+    display: block;
 }
-.related-block-wrap .related-block:hover .learn-more h5{
-    color:var(--active);
+
+.related-block-wrap .related-block:hover .learn-more h5 {
+    color: var(--active);
 }
-.related-block-wrap .related-block:hover .learn-more path{
-    fill:var(--active);
+
+.related-block-wrap .related-block:hover .learn-more path {
+    fill: var(--active);
 }
+
 /* Section 5 end */
 .nav-wrap button {
     display: none;
+}
+
+@media(max-width:1120px) {
+    .section-1 .build-solution {
+        flex-direction: column;
+    }
 }
 
 @media(max-width:1080px) {
     .nav-wrap button {
         display: flex;
     }
+
+    .information-blocks-container .information-block-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-3 .company-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related-blocks-container .related-block-wrap {
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .section-1{
+        padding-inline:20px;
+    }
+    .section-2 .what-to-expect-container{
+        padding-inline:20px;
+    }
+    .section-3 .clients-block{
+        padding-inline:20px;
+    }
+    .section-4 {
+        padding-inline:unset;
+    }
+    .section-5 .related-blocks-container{
+        padding-inline:20px;
+    }
+    .sign-up-block-wrap .enter-your-email-wrap {
+        max-width: unset;
+    }
+
+    .enter-your-email-wrap form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .enter-your-email-wrap form button {
+        margin-inline: unset;
+        justify-content: center
+    }
+
+    .stay-with-me-container {
+        margin-inline: 20px;
+        padding-top: 12px;
+    }
+
+    .stay-with-me-container .stay-with-me-wrap {
+        margin-bottom: 24px;
+    }
+
+    .stay-with-me-container .copyright-bottom {
+        flex-direction: column-reverse;
+        row-gap: 24px;
+    }
+
 }
