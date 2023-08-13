@@ -1258,7 +1258,7 @@
 
 .input-wrap .input-top-text,
 .input-wrap .text-in-input {
-    color: var(--fot-text-white);
+    color: var(--primary);
     font-family: 'Optima', sans-serif;
     font-size: 16px;
     font-style: normal;

@@ -476,6 +476,7 @@
         flex-direction: column-reverse;
         row-gap: 24px;
     }
+
     .tags ul,
     .share ul {
         flex-direction: column;
@@ -489,7 +490,8 @@
         justify-content: center;
         width: 100%;
     }
-    .enter-your-email-wrap button{
-        margin-inline:unset;
+
+    .enter-your-email-wrap button {
+        margin-inline: unset;
     }
 }

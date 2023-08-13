@@ -264,7 +264,10 @@
     position: relative;
     display: flex;
 }
-
+.enter-your-email-wrap.subscribe form{
+    flex-direction: column;
+    gap:12px;
+}
 .enter-your-email-wrap .input-email {
     width: 100%;
     padding: 12px;
@@ -401,7 +404,9 @@
     .nav-wrap button {
         display: flex;
     }
-
+    .subscribe-news-container{
+        max-width:unset;
+    }
     .sign-blocks-container {
         flex-direction: column;
         align-items: center;

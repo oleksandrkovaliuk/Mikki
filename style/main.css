@@ -71,7 +71,8 @@ header .nav-mobile-container {
 .sign-up-block-wrap button,
 .build-remote-text button,
 .what-inside-text button,
-.about-author-text-block button {
+.about-author-text-block button ,
+.leave-input-сontainer button {
     padding: 9px 20px;
     border-radius: 1px;
     background: var(--active, #D93448);
@@ -91,7 +92,8 @@ header .nav-mobile-container {
 .sign-up-block-wrap button h4,
 .build-remote-text button h4,
 .what-inside-text button h4,
-.about-author-text-block button h4 {
+.about-author-text-block button h4 ,
+.leave-input-сontainer button h4{
     color: var(--fot-text-white);
     font-family: 'Optima', sans-serif;
     font-size: 16px;
@@ -268,7 +270,167 @@ header .nav-mobile-container {
 header .nav-mobile-container{
     display:none;
 }
+/* Leave message */
+.leave-message {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 69000;
+    display: none;
+}
+.leave-message .bg{
+    background: rgba(34, 34, 34, 0.70);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.leave-message.show{
+    display:block;
+}
+.leave-message .leave-message-container {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
 
+.leave-message-container .leave-message-block {
+    background: var(--page-background, #F8F9FC);
+    padding-block: 24px;
+    position: relative;
+}
+
+.leave-message-block .close-icon {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.leave-message-block .leave-text {
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.leave-input:active,
+.leave-input:focus {
+    outline: none;
+}
+
+.leave-input-сontainer form {
+    max-width: 450px;
+    margin: auto;
+    padding-inline: 20px;
+}
+
+.leave-input-сontainer button {
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+.leave-block .input-wrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-wrap .input-top-text,
+.input-wrap .text-in-input {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    pointer-events: none;
+}
+
+.input-wrap .input-top-text {
+    margin-bottom: 16px;
+}
+
+.input-wrap .text-in-input {
+    color: var(--primary);
+}
+
+.leave-input:active+label,
+.leave-input:focus+label,
+.leave-input:not(:placeholder-shown)+label {
+    display: none;
+}
+
+.leave-block .chose-your-role {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.chose-your-role .selector {
+    appearance: none;
+    width: 100%;
+    padding: 12px;
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.chose-your-role .selector:active,
+.chose-your-role .selector:focus {
+    outline: none;
+}
+
+.chose-your-role svg {
+    position: absolute;
+    right: 18px;
+    pointer-events: none;
+}
+
+.input-wrap .leave-input {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.input-wrap .text-in-input {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+}
+
+.contact-me .contact-me-text {
+    color: var(--primary);
+    font-family: 'Optima', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom:24px;
+}
+
+.contact-me .social-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+/* Leave message end */
 @media(max-width:1080px) {
     .navigation {
         display: none;
