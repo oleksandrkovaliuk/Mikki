@@ -169,15 +169,12 @@
     margin-block: 20px;
 }
 
-.automatic-text .paragrafs {
-    position: relative;
-}
-
-.automatic-text .paragrafs .social-block {
+.automatic-text .social-block {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: -50px;
+    top: 0;
+    translate: 0 -100%;
 }
 
 .social-block .social-nav {
