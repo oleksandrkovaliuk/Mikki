@@ -6,6 +6,7 @@
 .top-guy-wrap img {
     margin: auto;
     margin-top: 69px;
+    width: 100%;
 }
 
 /* Section 1 end */
@@ -48,8 +49,42 @@
 }
 
 .social-nav.share li {
-    padding: 4px 4px 0;
+    padding: 4px;
     background-color: var(--accent-background);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+
+.social-nav.share .numbers-block {
+    position: absolute;
+    transform: translateX(-5px);
+    background: black;
+    z-index: -1;
+    height: 100%;
+    background-color: var(--accent-background);
+    opacity: 0;
+    transition: transform 0.5s ease-out;
+}
+
+.numbers-block .number-share {
+    color: var(--secondary-gray);
+    font-family: 'Optima', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 6px 4px 4px 0px;
+}
+
+.social-li:hover .numbers-block {
+    transform: translateX(20px);
+    opacity: 1;
+}
+
+.social-li:hover path {
+    fill: var(--active);
 }
 
 .automatic-text {
@@ -120,8 +155,59 @@
     margin-bottom: 20px;
 }
 
+.automatic-text p::-moz-selection {
+    color: var(--fot-text-white);
+    background-color: var(--active);
+}
+
+.automatic-text p::selection {
+    color: var(--fot-text-white);
+    background-color: var(--active);
+}
+
 .automatic-text p.top {
     margin-block: 20px;
+}
+
+.automatic-text .paragrafs {
+    position: relative;
+}
+
+.automatic-text .paragrafs .social-block {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+}
+
+.social-block .social-nav {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    background-color: var(--primary);
+    padding: 8px 12px 6px;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+}
+
+.social-block .social-nav::after {
+    position: absolute;
+    content: "";
+
+    border: 10px solid;
+
+    border-top-color: transparent;
+    border-bottom-color: var(--primary);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    rotate: 180deg;
+    bottom: -50%;
+    left: 40%;
+}
+
+.social-block .social-nav li path {
+    fill: var(--accent-background);
 }
 
 .name-of-game .name-of-game-main {
@@ -439,7 +525,8 @@
 
 @media(max-width:768px) {
     .section-2 {
-        gap: 10px;
+        gap: 5px;
+        padding-inline: 20px;
     }
 
     .section-3 .sign-blocks-container {
@@ -493,5 +580,9 @@
 
     .enter-your-email-wrap button {
         margin-inline: unset;
+    }
+
+    .notice-block-with-share-btn .notice-discription {
+        margin-left: 0px;
     }
 }

@@ -120,10 +120,6 @@
     line-height: 21px;
 }
 
-.reasons-blocks-wrap {
-    border-top: 1px solid var(--primary);
-}
-
 .reasons-blocks-wrap .reason-block {
     display: flex;
     align-items: center;
@@ -132,7 +128,9 @@
     border-bottom: 1px solid var(--primary);
     justify-content: space-between;
 }
-
+.reasons-blocks-wrap .reason-block.top{
+    border-top: 1px solid var(--primary);
+}
 .reason-block .reason-block-main-text {
     display: flex;
     align-items: center;
@@ -170,7 +168,18 @@
     font-weight: 400;
     line-height: 21px;
 }
-
+.reason-block:hover{
+    border-bottom:1px solid var(--active);
+}
+.reason-block:hover .number{
+    color:var(--active);
+}
+.reason-block:hover h3{
+    color:var(--active);
+}
+.reason-block:hover .reason-text-inside h4{
+    color:var(--active);
+}
 /* Section 3 end */
 
 /* Section 4 start */
@@ -953,7 +962,9 @@
     flex-direction: column;
     gap: 12px;
 }
-
+.articles-block:hover img{
+    border:1px solid var(--active);
+}
 .articles-block .date-time-position {
     display: flex;
     align-items: center;
@@ -1241,7 +1252,9 @@
 .hello-input:focus {
     outline: none;
 }
-
+.hello-input-сontainer button{
+    margin-left:auto;
+}
 .hello-input-сontainer .hello-block {
     gap: 30px;
     display: flex;
@@ -1250,7 +1263,9 @@
 .hello-input-сontainer .hello-block.top {
     margin-bottom: 40px;
 }
-
+.hello-input-сontainer .hello-block.bottom{
+    margin-bottom:46px;
+}
 .hello-block .input-wrap {
     width: 100%;
     position: relative;
@@ -1266,7 +1281,9 @@
     line-height: normal;
     pointer-events: none;
 }
-
+.input-wrap .input-top-text.hello{
+    color:var(--fot-text-white);
+}
 .input-wrap .input-top-text {
     margin-bottom: 16px;
 }
@@ -1316,15 +1333,20 @@
     padding: 12px;
     cursor: pointer;
 }
-
+.input-wrap .hello-input[required=""]:hover{
+    border:1px solid var(--active);
+}
 .input-wrap .text-in-input {
     position: absolute;
     left: 12px;
     bottom: 12px;
 }
-
 /* Section 9 end */
-
+/* Pressed-hover-block */
+.button-and-pressed:hover .pressed-block-container{
+display:block;
+}
+/* Pressed-hover-block */
 .nav-wrap button {
     display: none;
 }
@@ -1482,7 +1504,11 @@
     .hello-input-сontainer .hello-block {
         flex-wrap: wrap
     }
-
+    .hello-input-сontainer button{
+        margin:auto;
+        width:100%;
+        justify-content: center;
+    }
     .stay-with-me-container {
         margin-inline: 20px;
         padding-top: 12px;

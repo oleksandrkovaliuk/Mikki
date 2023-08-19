@@ -12,3 +12,11 @@ openBtn.addEventListener('click' , () => {
 closeFromBg.addEventListener('click' , () => {
     leaveBlock.classList.remove('show');
 })
+
+const allocationParagraf = document.querySelector(".paragrafs");
+const socialShowBlock = document.querySelector("#social-block-show");
+
+allocationParagraf.addEventListener('mouseup',  () => {
+    const block = allocationParagraf.getSelection().getRangeAt(0);
+    block.surroundContents(socialShowBlock);
+})
