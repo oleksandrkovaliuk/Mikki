@@ -74,6 +74,7 @@
     border: none;
     background-color: var(--active);
     display: flex;
+    cursor: pointer;
 }
 
 .articles-block-wrap {
@@ -87,8 +88,9 @@
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
+}.articles-block a{
+    text-decoration: none;
 }
-
 .articles-block .date-time-position {
     margin-block: 12px;
 }

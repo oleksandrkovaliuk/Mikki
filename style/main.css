@@ -155,7 +155,10 @@ header .nav-mobile-container {
     text-decoration: none;
     position:relative;
 }
-.navigation .nav-links::after{
+.blocks-nav .nav-links{
+    position:relative;
+}
+.navigation .nav-links::after , .blocks-nav .nav-links::after{
     content: "";
     position: absolute;
     bottom: -12px;
@@ -167,10 +170,15 @@ header .nav-mobile-container {
     transform-origin: center;
     transition: transform 0.2s ease-in;
 }
-.navigation .nav-links:hover{
+.blocks-nav .nav-links::after{
+    bottom:-25px;
+    z-index:69000;
+    height:3px;
+}
+.navigation .nav-links:hover , .blocks-nav .nav-links:hover{
     color:var(--active);
 }
-.navigation .nav-links:hover::after{
+.navigation .nav-links:hover::after , .blocks-nav .nav-links:hover::after{
     transform:scaleX(1);
 }
 .contacts-wrap {
@@ -210,7 +218,21 @@ header .nav-mobile-container {
     display: flex;
     gap: 24px;
 }
-
+.social-nav svg path{
+    fill:var(--secondary-gray);
+}
+.social-nav li:hover svg path{
+fill:var(--active);
+}
+.social-nav.footer li{
+    cursor: pointer;
+}
+.social-nav.footer li:hover{
+    background-color:var(--active);
+}
+.social-nav.footer li:hover svg path{
+    fill:var(--accent-background);
+}
 .stay-with-me-container {
     margin-inline: 85px;
     border-top: 1px solid var(--primary);

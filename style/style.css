@@ -955,12 +955,13 @@
     gap: 30px;
     justify-content: space-between;
 }
-
-.articles-block {
+.articles-block a{
+    text-decoration: none;
     max-width: 255px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    cursor: pointer;
 }
 .articles-block:hover img{
     border:1px solid var(--active);
@@ -1345,6 +1346,9 @@
 /* Pressed-hover-block */
 .button-and-pressed:hover .pressed-block-container{
 display:block;
+}
+.button-and-pressed a{
+    text-decoration: none;
 }
 /* Pressed-hover-block */
 .nav-wrap button {
