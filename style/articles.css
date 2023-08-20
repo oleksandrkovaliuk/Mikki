@@ -169,10 +169,6 @@
     margin-block: 20px;
 }
 
-.automatic-text {
-    position: relative;
-}
-
 .automatic-text .social-block {
     display: none;
     position: fixed;
